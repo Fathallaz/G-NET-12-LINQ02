@@ -3,6 +3,7 @@ using G_NET_12_LINQ02.DataSource;
 using G_NET_12_LINQ02.Models;
 using System.Collections;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Runtime.ConstrainedExecution;
 
 
@@ -76,6 +77,23 @@ namespace G_NET_12_LINQ02
 
             //Answer:
             //var result = Source.ProductList.GroupBy(p => p.Category).Where(g => g.Count() > 3).Select(g => g.Key);
+
+            #endregion
+
+            #region Question 9 
+            //9.Using QUERY SYNTAX, group customers by Country, and for each
+            //group select { Country, Count, TotalOrderValue }.
+
+            //Answer:
+            //var result = from c in Source.CustomerList
+            //             group c by c.Country into g
+            //             select new
+            //             {
+            //                 Country = g.Key,
+            //                 Count = g.Count(),
+            //                 TotalOrderValue = g.Sum(c => c.Orders.Sum(o => o.Total))
+            //             };
+
 
             #endregion
 
