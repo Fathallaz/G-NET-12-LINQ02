@@ -2,6 +2,7 @@
 using G_NET_12_LINQ02.DataSource;
 using G_NET_12_LINQ02.Models;
 using System.Collections;
+using System.ComponentModel;
 
 
 
@@ -41,6 +42,15 @@ namespace G_NET_12_LINQ02
             //Answer:
             //var result = Source.ProductList.Where(p => p.Category == "Seafood").All(p => p.UnitsInStock > 0);
             //Console.WriteLine(result);
+            #endregion
+
+            #region Question 5 
+            //            5.Check if the ID list contains 9
+            //int[] ids = { 3, 9, 13, 18 };
+
+            //Answer:
+            //int[] ids = { 3, 9, 13, 18 };
+            //Console.WriteLine(ids.Contains(9));
             #endregion
 
 
