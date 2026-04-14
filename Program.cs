@@ -26,11 +26,19 @@ namespace G_NET_12_LINQ02
             //var result = Source.ProductList.Skip(5).Take(5).Select(p => p.ProductName);
             #endregion
 
+            #region Question 3 
+            //            3.Take products from the list as long as Their UnitPrice is less than
+            //$25(list is ordered by price).
+
+            //Answer:
+            //var result = Source.ProductList.OrderBy(p=> p.UnitPrice).TakeWhile(p => p.UnitPrice < 25).Select(p => p.ProductName);
+            #endregion
 
 
 
 
-            foreach (var item in result )
+
+            foreach (var item in result)
             {
                 Console.WriteLine(item);
             }
