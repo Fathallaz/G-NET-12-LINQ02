@@ -179,7 +179,17 @@ namespace G_NET_12_LINQ02
             //Answer:
             //int number = 7;
             //var result = Enumerable.Range(1, 10).Select(i => $"{number} x {i} = {number * i}");
-            
+
+
+            #endregion
+
+            #region Question 19 
+            //19.Generate even numbers between 1 and 30.
+
+            //Answer:
+            //int start = 1;
+            //int count = 0;
+            //var result = Enumerable.Range(start, 30).Where(n => n % 2 == 0);
 
             #endregion
 
