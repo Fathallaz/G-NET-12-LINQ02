@@ -5,6 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
+using System.IO.Pipelines;
 using System.Runtime.ConstrainedExecution;
 
 
@@ -147,6 +148,17 @@ namespace G_NET_12_LINQ02
             //string [] list1 = { "Germany", "France", "UK", "Spain" };
             //string [] list2 = { "france", "SPAIN", "Italy" };
             //var result = list1.Except(list2, StringComparer.OrdinalIgnoreCase);
+
+            #endregion
+
+            #region Question 16
+            //16.Get the first product whose price is greater than $50.
+
+            //Answer:
+
+            //var first = Source.ProductList.FirstOrDefault(p => p.UnitPrice > 50)?.ProductName ?? "No product found";
+            //Console.WriteLine(first);
+
 
             #endregion
 
