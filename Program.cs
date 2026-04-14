@@ -1,6 +1,7 @@
 ﻿
 using G_NET_12_LINQ02.DataSource;
 using G_NET_12_LINQ02.Models;
+using System.Collections;
 
 
 
@@ -32,6 +33,14 @@ namespace G_NET_12_LINQ02
 
             //Answer:
             //var result = Source.ProductList.OrderBy(p=> p.UnitPrice).TakeWhile(p => p.UnitPrice < 25).Select(p => p.ProductName);
+            #endregion
+
+            #region Question 4 
+            //4.Check if ALL products in the "Seafood" category are in stock
+
+            //Answer:
+            //var result = Source.ProductList.Where(p => p.Category == "Seafood").All(p => p.UnitsInStock > 0);
+            //Console.WriteLine(result);
             #endregion
 
 
