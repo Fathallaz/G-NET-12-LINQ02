@@ -97,6 +97,15 @@ namespace G_NET_12_LINQ02
 
             #endregion
 
+            #region Question 10 
+            //10.Calculate the total number of units in stock across all products
+
+            //Answer:
+            //var total = Source.ProductList.Sum(p => p.UnitsInStock);
+            //Console.WriteLine(total);
+
+            #endregion
+
 
 
 
