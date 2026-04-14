@@ -203,6 +203,16 @@ namespace G_NET_12_LINQ02
 
             #endregion
 
+            #region Question 21 
+            //21. Pair each product with a customer (by position) and produce
+            //a string "ProductName sold to CompanyName".
+
+            //Answer:
+            //var result = Source.ProductList.Zip(Source.CustomerList, (p, c) => $"{p.ProductName} sold to {c.CompanyName}");
+
+
+            #endregion
+
 
 
 
