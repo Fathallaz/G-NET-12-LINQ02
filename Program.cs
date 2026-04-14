@@ -53,6 +53,15 @@ namespace G_NET_12_LINQ02
             //Console.WriteLine(ids.Contains(9));
             #endregion
 
+            #region Question 6 
+            //            6.Group all products by Category and print each group with its
+            //product count.
+
+            //Answer:
+            //var result = Source.ProductList.GroupBy(p => p.Category).Select(g => $"{g.Key}: {g.Count()} products");
+
+            #endregion
+
 
 
 
