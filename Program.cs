@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.IO.Pipelines;
+using System.Reflection.Emit;
 using System.Runtime.ConstrainedExecution;
 
 
@@ -169,6 +170,16 @@ namespace G_NET_12_LINQ02
             //Answer:
             //var first = Source.ProductList.FirstOrDefault(p => p.UnitPrice > 500)?.ProductName ?? "No product found";   
             //Console.WriteLine(first);
+
+            #endregion
+
+            #region Question 18 
+            //18.Generate a multiplication table row for 7
+
+            //Answer:
+            //int number = 7;
+            //var result = Enumerable.Range(1, 10).Select(i => $"{number} x {i} = {number * i}");
+            
 
             #endregion
 
