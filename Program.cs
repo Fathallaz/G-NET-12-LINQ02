@@ -3,6 +3,7 @@ using G_NET_12_LINQ02.DataSource;
 using G_NET_12_LINQ02.Models;
 using System.Collections;
 using System.ComponentModel;
+using System.Runtime.ConstrainedExecution;
 
 
 
@@ -59,6 +60,14 @@ namespace G_NET_12_LINQ02
 
             //Answer:
             //var result = Source.ProductList.GroupBy(p => p.Category).Select(g => $"{g.Key}: {g.Count()} products");
+
+            #endregion
+
+            #region Question 7 
+            //7.Group products by Category and project only product names per group
+
+            //Answer:
+            //var result = Source.ProductList.GroupBy(p=>p.Category).Select(g => $"{g.Key}: {string.Join(", ", g.Select(p => p.ProductName))}");
 
             #endregion
 
