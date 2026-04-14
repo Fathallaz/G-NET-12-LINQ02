@@ -14,10 +14,22 @@ namespace G_NET_12_LINQ02
             //1.Get top 3 most expensive products
 
             //Answer:
-            var result = Source.ProductList.OrderByDescending(p => p.UnitPrice).Take(3).Select(p => p.ProductName );
+            //var result = Source.ProductList.OrderByDescending(p => p.UnitPrice).Take(3).Select(p => p.ProductName );
 
 
             #endregion
+
+            #region Question 2 
+            //2.show page 2 of products, with page size = 5
+
+            //Answer:
+            //var result = Source.ProductList.Skip(5).Take(5).Select(p => p.ProductName);
+            #endregion
+
+
+
+
+
             foreach (var item in result )
             {
                 Console.WriteLine(item);
