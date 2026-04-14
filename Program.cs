@@ -3,6 +3,7 @@ using G_NET_12_LINQ02.DataSource;
 using G_NET_12_LINQ02.Models;
 using System.Collections;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Runtime.ConstrainedExecution;
 
@@ -103,6 +104,16 @@ namespace G_NET_12_LINQ02
             //Answer:
             //var total = Source.ProductList.Sum(p => p.UnitsInStock);
             //Console.WriteLine(total);
+
+            #endregion
+
+            #region Question 11 
+            //11.Find the CHEAPEST and MOST EXPENSIVE product prices
+
+            //Answer:
+            //var cheapest = Source.ProductList.Min(p => p.UnitPrice);
+            //var mostExpensive = Source.ProductList.Max(p => p.UnitPrice);
+            //Console.WriteLine($"Cheapest: {cheapest}, Most Expensive: {mostExpensive}");
 
             #endregion
 
